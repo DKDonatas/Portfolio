@@ -73,14 +73,16 @@ export function Hero() {
             >
               View My Work
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              rightIcon={<FileText className="w-4 h-4" />}
-              onClick={() => {}}
+            <a
+              href="/Donatas-Kusleika-CV.pdf"
+              download
+              className="inline-flex"
+              aria-label="Download CV"
             >
-              Download CV
-            </Button>
+              <Button size="lg" variant="outline" rightIcon={<FileText className="w-4 h-4" />}>
+                Download CV
+              </Button>
+            </a>
             <div className="flex items-center gap-2 ml-2">
               <motion.a
                 href="https://github.com/DKDonatas"
