@@ -11,6 +11,7 @@ export interface Project {
   tech: string[]
   github?: string
   live?: string
+  image?: string
   category: Exclude<ProjectCategory, 'all'>
   featured: boolean
 }

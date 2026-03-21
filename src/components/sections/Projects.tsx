@@ -30,7 +30,32 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
     >
-      <Card hoverable className="h-full flex flex-col group">
+      <Card hoverable className="h-full flex flex-col group overflow-hidden">
+        {project.image && (
+          <div className="-mx-6 -mt-6 mb-4 overflow-hidden rounded-t-2xl border-b border-slate-800/60 bg-slate-950/80">
+            {project.live ? (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-t-2xl"
+                aria-label={`Open live demo: ${project.title}`}
+              >
+                <img
+                  src={project.image}
+                  alt=""
+                  className="w-full h-44 sm:h-48 object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </a>
+            ) : (
+              <img
+                src={project.image}
+                alt={`${project.title} — preview`}
+                className="w-full h-44 sm:h-48 object-cover object-top"
+              />
+            )}
+          </div>
+        )}
         <Card.Header>
           <div className="flex items-start justify-between gap-2 mb-3">
             <div className="flex items-center gap-2">
@@ -44,7 +69,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
                 {project.category}
               </Badge>
             </div>
-            <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="flex items-center gap-1">
               {project.github && (
                 <a
                   href={project.github}
