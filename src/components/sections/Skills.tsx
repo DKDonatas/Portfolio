@@ -38,10 +38,10 @@ function SkillCard({ name }: { name: string }) {
       variants={scaleIn}
       whileHover={{ y: -4, scale: 1.03 }}
       transition={{ duration: 0.2 }}
-      className="flex items-center gap-3 p-4 rounded-xl glass-card hover:border-slate-700 hover:shadow-lg hover:shadow-violet-500/5 transition-colors group"
+      className="flex items-center gap-3 p-4 rounded-xl glass-card hover:border-slate-700 hover:shadow-lg hover:shadow-white/5 transition-colors group"
     >
-      <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-600/30 to-cyan-600/20 border border-violet-500/20 flex items-center justify-center flex-shrink-0 group-hover:from-violet-600/40 transition-colors">
-        <span className="font-mono text-[10px] font-bold text-violet-300">{abbr}</span>
+      <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-white/15 to-zinc-600/20 border border-white/15 flex items-center justify-center flex-shrink-0 group-hover:from-white/20 transition-colors">
+        <span className="font-mono text-[10px] font-bold text-zinc-200">{abbr}</span>
       </div>
       <span className="text-sm font-medium text-slate-200">{name}</span>
     </motion.div>
@@ -63,7 +63,7 @@ export function Skills() {
           animate={isVisible ? 'visible' : 'hidden'}
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
-            <span className="font-mono text-sm text-violet-400 tracking-wider">02. skills</span>
+            <span className="font-mono text-sm text-zinc-400 tracking-wider">02. skills</span>
             <h2 className="mt-2 text-4xl font-bold text-slate-100">
               Tech <span className="gradient-text">Stack</span>
             </h2>
@@ -80,7 +80,7 @@ export function Skills() {
                 className={cn(
                   'flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200',
                   activeCategory === cat.id
-                    ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40'
+                    ? 'bg-white/10 text-zinc-100 border border-white/25'
                     : 'bg-slate-900/60 text-slate-400 border border-slate-800 hover:border-slate-700 hover:text-slate-200'
                 )}
               >

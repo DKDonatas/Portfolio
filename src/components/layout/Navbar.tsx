@@ -58,8 +58,8 @@ export function Navbar() {
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-cyan-600 flex items-center justify-center">
-              <span className="text-white text-xs font-bold font-mono">DK</span>
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-zinc-100 to-zinc-500 flex items-center justify-center">
+              <span className="text-black text-xs font-bold font-mono">DK</span>
             </div>
             <span className="font-semibold text-slate-100 group-hover:text-white transition-colors">
               Donatas<span className="gradient-text">.</span>
@@ -74,7 +74,7 @@ export function Navbar() {
                 className={cn(
                   'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                   activeSection === item.href.replace('#', '')
-                    ? 'text-violet-400 bg-violet-500/10'
+                    ? 'text-zinc-100 bg-white/10'
                     : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60'
                 )}
               >
@@ -110,7 +110,7 @@ export function Navbar() {
                 handleNavClick('#contact')
               }}
               whileTap={{ scale: 0.97 }}
-              className="hidden md:flex h-9 px-4 items-center text-sm font-medium rounded-lg bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white transition-all duration-200"
+              className="hidden md:flex h-9 px-4 items-center text-sm font-medium rounded-lg bg-white text-black hover:bg-zinc-200 transition-all duration-200"
             >
               Hire me
             </motion.a>
@@ -154,7 +154,7 @@ export function Navbar() {
                   className={cn(
                     'w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200',
                     activeSection === item.href.replace('#', '')
-                      ? 'text-violet-400 bg-violet-500/10'
+                      ? 'text-zinc-100 bg-white/10'
                       : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60'
                   )}
                 >
@@ -164,7 +164,7 @@ export function Navbar() {
               <div className="pt-2 mt-2 border-t border-slate-800/60">
                 <button
                   onClick={() => handleNavClick('#contact')}
-                  className="w-full h-10 rounded-lg bg-gradient-to-r from-violet-600 to-cyan-600 text-white text-sm font-medium"
+                  className="w-full h-10 rounded-lg bg-white text-black hover:bg-zinc-200 text-sm font-medium"
                 >
                   Hire me
                 </button>

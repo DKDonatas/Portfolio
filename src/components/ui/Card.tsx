@@ -22,7 +22,7 @@ function Card({ children, className, hoverable = false, onClick }: CardProps) {
       transition={{ duration: 0.25, ease: 'easeOut' }}
       className={cn(
         'glass-card p-6',
-        hoverable && 'cursor-none transition-shadow duration-300 hover:shadow-xl hover:shadow-violet-500/10 hover:border-slate-700',
+        hoverable && 'cursor-none transition-shadow duration-300 hover:shadow-xl hover:shadow-white/5 hover:border-slate-700',
         onClick && 'cursor-none',
         className
       )}

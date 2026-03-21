@@ -22,8 +22,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-grid-pattern bg-grid-md opacity-40" />
 
       <motion.div ref={ref} style={{ y }} className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-cyan-500/15 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2" />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-white/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-zinc-500/10 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2" />
       </motion.div>
 
       <div className="section-container relative z-10 pt-24 pb-16">
@@ -34,11 +34,11 @@ export function Hero() {
           className="max-w-4xl"
         >
           <motion.div variants={fadeInDown} className="flex items-center gap-2 mb-6">
-            <Sparkles className="w-4 h-4 text-violet-400" />
-            <span className="font-mono text-sm text-violet-400 tracking-wider">
+            <Sparkles className="w-4 h-4 text-zinc-300" />
+            <span className="font-mono text-sm text-zinc-300 tracking-wider">
               Available for opportunities
             </span>
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-slow" />
+            <span className="w-2 h-2 rounded-full bg-white animate-pulse-slow" />
           </motion.div>
 
           <motion.h1
@@ -53,7 +53,7 @@ export function Hero() {
             <span className="text-2xl md:text-3xl font-semibold text-slate-300">
               {typedText}
             </span>
-            <span className="w-0.5 h-8 bg-violet-400 animate-pulse" />
+            <span className="w-0.5 h-8 bg-zinc-400 animate-pulse" />
           </motion.div>
 
           <motion.p

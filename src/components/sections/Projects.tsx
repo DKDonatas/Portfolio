@@ -38,7 +38,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-t-2xl"
+                className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-t-2xl"
                 aria-label={`Open live demo: ${project.title}`}
               >
                 <img
@@ -60,7 +60,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           <div className="flex items-start justify-between gap-2 mb-3">
             <div className="flex items-center gap-2">
               {project.featured && (
-                <span className="flex items-center gap-1 text-xs font-mono text-amber-400 bg-amber-400/10 border border-amber-400/20 px-2 py-0.5 rounded-md">
+                <span className="flex items-center gap-1 text-xs font-mono text-zinc-200 bg-white/10 border border-white/15 px-2 py-0.5 rounded-md">
                   <Star className="w-3 h-3" />
                   Featured
                 </span>
@@ -95,7 +95,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             </div>
           </div>
 
-          <h3 className="text-lg font-bold text-slate-100 group-hover:text-violet-300 transition-colors">
+          <h3 className="text-lg font-bold text-slate-100 group-hover:text-zinc-100 transition-colors">
             {project.title}
           </h3>
         </Card.Header>
@@ -139,7 +139,7 @@ export function Projects() {
           animate={isVisible ? 'visible' : 'hidden'}
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
-            <span className="font-mono text-sm text-violet-400 tracking-wider">03. projects</span>
+            <span className="font-mono text-sm text-zinc-400 tracking-wider">03. projects</span>
             <h2 className="mt-2 text-4xl font-bold text-slate-100">
               Selected <span className="gradient-text">Work</span>
             </h2>
@@ -157,7 +157,7 @@ export function Projects() {
                 className={cn(
                   'px-5 py-2 rounded-xl text-sm font-medium transition-all duration-200',
                   activeFilter === option.id
-                    ? 'bg-violet-500/20 text-violet-300 border border-violet-500/40'
+                    ? 'bg-white/10 text-zinc-100 border border-white/25'
                     : 'bg-slate-900/60 text-slate-400 border border-slate-800 hover:border-slate-700 hover:text-slate-200'
                 )}
               >

@@ -11,10 +11,8 @@ export default {
           tertiary: '#1e293b',
         },
         accent: {
-          violet: '#8b5cf6',
-          cyan: '#06b6d4',
-          'violet-light': '#a78bfa',
-          'cyan-light': '#22d3ee',
+          light: '#fafafa',
+          muted: '#a1a1aa',
         },
       },
       fontFamily: {
@@ -43,9 +41,9 @@ export default {
       },
       backgroundImage: {
         'dot-pattern':
-          "radial-gradient(circle, rgba(139,92,246,0.15) 1px, transparent 1px)",
+          'radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px)',
         'grid-pattern':
-          "linear-gradient(rgba(139,92,246,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.05) 1px, transparent 1px)",
+          'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
       },
       backgroundSize: {
         'dot-sm': '24px 24px',

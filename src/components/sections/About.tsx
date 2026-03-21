@@ -25,9 +25,9 @@ export function About() {
         >
           <motion.div variants={fadeInLeft} className="relative">
             <div className="relative mx-auto w-72 h-72 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-600 to-cyan-600 opacity-20 blur-2xl" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-zinc-500 to-zinc-800 opacity-25 blur-2xl" />
               <div className="relative w-full h-full rounded-3xl gradient-border overflow-hidden bg-bg-secondary">
-                <div className="absolute inset-0 bg-gradient-to-br from-violet-900/40 to-cyan-900/30" />
+                <div className="absolute inset-0 bg-gradient-to-br from-zinc-800/50 to-zinc-950/40" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="font-mono text-8xl font-bold gradient-text opacity-30 select-none">
                     {'</>'}
@@ -39,14 +39,14 @@ export function About() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center"
+                className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center"
               >
                 <span className="text-2xl">⚡</span>
               </motion.div>
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-4 -left-4 w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center"
+                className="absolute -bottom-4 -left-4 w-14 h-14 rounded-2xl bg-zinc-500/15 border border-zinc-500/25 flex items-center justify-center"
               >
                 <span className="text-xl">🚀</span>
               </motion.div>
@@ -57,7 +57,7 @@ export function About() {
             <div>
               <motion.span
                 variants={fadeInUp}
-                className="font-mono text-sm text-violet-400 tracking-wider"
+                className="font-mono text-sm text-zinc-400 tracking-wider"
               >
                 01. about me
               </motion.span>
@@ -86,8 +86,8 @@ export function About() {
                   key={label}
                   className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-4 h-4 text-violet-400" />
+                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-4 h-4 text-zinc-300" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500">{label}</p>

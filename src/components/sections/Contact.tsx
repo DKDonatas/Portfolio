@@ -18,7 +18,7 @@ export function Contact() {
           animate={isVisible ? 'visible' : 'hidden'}
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
-            <span className="font-mono text-sm text-violet-400 tracking-wider">05. contact</span>
+            <span className="font-mono text-sm text-zinc-400 tracking-wider">05. contact</span>
             <h2 className="mt-2 text-4xl font-bold text-slate-100">
               Let's <span className="gradient-text">Connect</span>
             </h2>
@@ -36,12 +36,12 @@ export function Contact() {
                     href="mailto:DonatasKusleika@gmail.com"
                     className="flex items-center gap-3 group w-full p-4 rounded-2xl glass-card hover:border-slate-700 transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center group-hover:bg-violet-500/20 transition-colors">
-                      <Mail className="w-4 h-4 text-violet-400" />
+                    <div className="w-10 h-10 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center group-hover:bg-white/15 transition-colors">
+                      <Mail className="w-4 h-4 text-zinc-300" />
                     </div>
                     <div>
                       <p className="text-xs text-slate-500">Email</p>
-                      <p className="text-sm font-medium text-slate-200 group-hover:text-violet-300 transition-colors">
+                      <p className="text-sm font-medium text-slate-200 group-hover:text-white transition-colors">
                         DonatasKusleika@gmail.com
                       </p>
                     </div>
@@ -74,7 +74,7 @@ export function Contact() {
 
               <div className="p-5 rounded-2xl glass-card">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
                   <span className="text-sm font-medium text-slate-200">Available for work</span>
                 </div>
                 <p className="text-xs text-slate-500">

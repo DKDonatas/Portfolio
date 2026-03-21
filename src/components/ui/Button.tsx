@@ -16,11 +16,11 @@ interface ButtonProps extends Omit<HTMLMotionProps<'button'>, 'children'> {
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    'bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white shadow-lg shadow-violet-500/25',
+    'bg-white text-black hover:bg-zinc-200 shadow-lg shadow-black/25',
   secondary:
     'bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 hover:border-slate-600',
   outline:
-    'border border-violet-500/60 hover:border-violet-400 text-violet-400 hover:bg-violet-500/10',
+    'border border-white/40 hover:border-white/70 text-zinc-300 hover:bg-white/10',
   ghost: 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60',
 }
 
@@ -52,7 +52,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(
           'relative inline-flex items-center justify-center rounded-xl font-medium',
           'transition-all duration-200 focus-visible:outline-none focus-visible:ring-2',
-          'focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary',
+          'focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary',
           'disabled:pointer-events-none disabled:opacity-50 cursor-none',
           variantStyles[variant],
           sizeStyles[size],

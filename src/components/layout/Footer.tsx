@@ -17,8 +17,8 @@ export function Footer() {
       <div className="section-container py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-600 to-cyan-600 flex items-center justify-center">
-              <span className="text-white text-xs font-bold font-mono">DK</span>
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-zinc-100 to-zinc-500 flex items-center justify-center">
+              <span className="text-black text-xs font-bold font-mono">DK</span>
             </div>
             <span className="font-semibold text-slate-300">Donatas<span className="gradient-text">.</span></span>
           </div>

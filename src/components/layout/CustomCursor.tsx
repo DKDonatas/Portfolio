@@ -81,7 +81,7 @@ export function CustomCursor() {
           animate={{
             scale: ringScale,
             borderColor:
-              cursorState === 'hover' ? 'rgba(139,92,246,0.8)' : 'rgba(255,255,255,0.4)',
+              cursorState === 'hover' ? 'rgba(255,255,255,0.85)' : 'rgba(255,255,255,0.4)',
           }}
           transition={{ duration: 0.2, ease: 'easeOut' }}
           className="w-8 h-8 rounded-full border border-white/40"

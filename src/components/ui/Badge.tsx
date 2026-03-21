@@ -13,8 +13,8 @@ interface BadgeProps {
 
 const variantStyles: Record<Variant, string> = {
   default: 'bg-slate-800 text-slate-300 border border-slate-700/60',
-  primary: 'bg-violet-500/15 text-violet-300 border border-violet-500/30',
-  secondary: 'bg-cyan-500/15 text-cyan-300 border border-cyan-500/30',
+  primary: 'bg-white/10 text-zinc-100 border border-white/20',
+  secondary: 'bg-zinc-500/15 text-zinc-300 border border-zinc-500/30',
   outline: 'bg-transparent text-slate-400 border border-slate-600',
 }
 

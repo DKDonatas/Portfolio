@@ -17,7 +17,7 @@ export function Experience() {
           animate={isVisible ? 'visible' : 'hidden'}
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
-            <span className="font-mono text-sm text-violet-400 tracking-wider">04. experience</span>
+            <span className="font-mono text-sm text-zinc-400 tracking-wider">04. experience</span>
             <h2 className="mt-2 text-4xl font-bold text-slate-100">
               Work <span className="gradient-text">History</span>
             </h2>
@@ -27,7 +27,7 @@ export function Experience() {
           </motion.div>
 
           <div className="relative max-w-3xl mx-auto">
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-violet-500/60 via-slate-700 to-transparent hidden sm:block" />
+            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-zinc-400/50 via-slate-700 to-transparent hidden sm:block" />
 
             <div className="space-y-8">
               {EXPERIENCES.map((exp, index) => {
@@ -40,7 +40,7 @@ export function Experience() {
                     className="relative sm:pl-16"
                   >
                     <div className="absolute left-0 top-6 w-12 h-12 rounded-xl bg-bg-primary border border-slate-800 flex items-center justify-center hidden sm:flex z-10">
-                      <Briefcase className="w-5 h-5 text-violet-400" />
+                      <Briefcase className="w-5 h-5 text-zinc-300" />
                     </div>
 
                     <div className="glass-card p-6 hover:border-slate-700 transition-colors">
@@ -50,11 +50,11 @@ export function Experience() {
                           {(exp.company || exp.current) && (
                             <div className="flex items-center gap-2 mt-1">
                               {exp.company && (
-                                <span className="text-violet-400 font-medium text-sm">{exp.company}</span>
+                                <span className="text-zinc-300 font-medium text-sm">{exp.company}</span>
                               )}
                               {exp.current && (
-                                <span className="flex items-center gap-1 text-xs font-mono text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded-md">
-                                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                                <span className="flex items-center gap-1 text-xs font-mono text-zinc-200 bg-white/10 border border-white/15 px-2 py-0.5 rounded-md">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                                   Current
                                 </span>
                               )}
@@ -70,7 +70,7 @@ export function Experience() {
                       <ul className="space-y-2 mb-4">
                         {exp.description.map((point, i) => (
                           <li key={i} className="flex gap-3 text-sm text-slate-400">
-                            <span className="text-violet-500 mt-1.5 flex-shrink-0">▸</span>
+                            <span className="text-zinc-500 mt-1.5 flex-shrink-0">▸</span>
                             <span>{point}</span>
                           </li>
                         ))}
